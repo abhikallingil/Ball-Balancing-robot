@@ -1,0 +1,4 @@
+numpy
+opencv-python
+picamera2
+adafruit-circuitpython-servokit
