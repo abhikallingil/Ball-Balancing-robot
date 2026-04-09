@@ -9,7 +9,7 @@ This project is a self-balancing ball robot that uses computer vision and contro
 <div align="center">
   <img src="https://github.com/user-attachments/assets/099f989c-ea3a-458e-b146-e180f124afed" width="500"/>
 
-  <p><b>Assembled Structure (3D printed servo mechanism)</b></p>
+  <p><b>Assembled Structure </b></p>
 </div>
 
 <br>
