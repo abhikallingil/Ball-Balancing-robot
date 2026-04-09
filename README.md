@@ -67,9 +67,40 @@ This project is a self-balancing ball robot that uses computer vision and contro
   - threading (built-in)  
 
 ---
+## 🔌 Pin Configuration (Raspberry Pi + Servo Driver)
 
+### 📡 I2C Connection (Raspberry Pi → PCA9685)
+
+| Raspberry Pi Pin | PCA9685 Pin |
+|------------------|-------------|
+| 3.3V (Pin 1)     | VCC         |
+| GND (Pin 6)      | GND         |
+| GPIO 2 (SDA)     | SDA         |
+| GPIO 3 (SCL)     | SCL         |
+
+---
+
+### ⚙️ Servo Connections
+
+| Servo | Channel |
+|-------|---------|
+| Servo 1 | CH0 |
+| Servo 2 | CH1 |
+| Servo 3 | CH2 |
+
+---
+
+### 🔋 Important Power Notes
+
+- Do NOT power servos from Raspberry Pi
+- Use external 5V power supply
+- Connect all grounds together:
+  - Raspberry Pi GND  
+  - PCA9685 GND  
+  - External power GND  
+
+---
 ## ⚙️ Installation
-
 ```bash
 git clone https://github.com/your-username/self-balancing-ball-robot.git
 cd self-balancing-ball-robot
