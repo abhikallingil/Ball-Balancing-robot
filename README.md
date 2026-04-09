@@ -1,4 +1,4 @@
-# 🤖 Self-Balancing Ball Robot
+#  Self-Balancing Ball Robot
 
 ## 📌 Overview
 This project is a self-balancing ball robot that uses computer vision and control algorithms to keep a ball centered on a platform. The system uses a Raspberry Pi, camera input, and three servo motors to dynamically adjust the platform in real time.
