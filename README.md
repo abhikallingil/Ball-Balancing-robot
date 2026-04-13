@@ -66,13 +66,6 @@ This project involves a self-balancing ball robot that uses computer vision and 
 - Multithreaded processing for better performance  
 - Inverse kinematics for precise servo movement  
 
----
-
-## 📚 References
-
-- https://www.youtube.com/watch?v=KnYSuQEBGHc&t=171s  
-- https://www.youtube.com/watch?v=bi4151fWoTY
-
 ---  
 
 ## 🛠️ Tech Stack
@@ -122,6 +115,12 @@ This project involves a self-balancing ball robot that uses computer vision and 
   - PCA9685 GND  
   - External power GND  
 
+---
+
+## 📚 References
+
+- https://www.youtube.com/watch?v=KnYSuQEBGHc&t=171s  
+- https://www.youtube.com/watch?v=bi4151fWoTY
 ---
 
 ## ⚙️ Installation
