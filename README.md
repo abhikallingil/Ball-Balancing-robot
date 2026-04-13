@@ -1,7 +1,7 @@
 #  Self-Balancing Ball Robot
 
 ## 📌 Overview
-This project is a self-balancing ball robot that uses computer vision and control algorithms to keep a ball centered on a platform. The system uses a Raspberry Pi, camera input, and three servo motors to dynamically adjust the platform in real time.
+This project involves a self-balancing ball robot that uses computer vision and control techniques to keep the ball at the center of a platform. It utilizes a Raspberry Pi, a camera for input, and three servo motors to adjust the platform in real time continuously.
 
 
 ---
@@ -45,7 +45,21 @@ This project is a self-balancing ball robot that uses computer vision and contro
 </div>
 <br><br>
 
+---
+
+## ⚙️ How It Works
+
+1. The camera captures real-time video of the platform.
+2. Computer vision is used to detect the position of the ball.
+3. The system calculates the error between the ball’s current position and the center.
+4. A control algorithm (e.g., PID) processes this error.
+5. Based on the output, three servo motors adjust the platform’s tilt.
+6. This process repeats continuously to keep the ball balanced at the center.
+
+---
+
 ## 🎯 Features
+
 - Real-time ball position tracking using camera  
 - Automatic balancing using PID control  
 - 3-servo motor platform control  
@@ -54,7 +68,15 @@ This project is a self-balancing ball robot that uses computer vision and contro
 
 ---
 
+## 📚 References
+
+- https://www.youtube.com/watch?v=KnYSuQEBGHc&t=171s  
+- https://www.youtube.com/watch?v=bi4151fWoTY
+
+---  
+
 ## 🛠️ Tech Stack
+
 - **Language:** Python  
 - **Hardware:** Raspberry Pi, Servo Motors, Camera Module  
 - **Libraries:**
@@ -67,6 +89,7 @@ This project is a self-balancing ball robot that uses computer vision and contro
   - threading (built-in)  
 
 ---
+
 ## 🔌 Pin Configuration (Raspberry Pi + Servo Driver)
 
 ### 📡 I2C Connection (Raspberry Pi → PCA9685)
@@ -100,7 +123,9 @@ This project is a self-balancing ball robot that uses computer vision and contro
   - External power GND  
 
 ---
+
 ## ⚙️ Installation
+
 ```bash
 git clone https://github.com/your-username/self-balancing-ball-robot.git
 cd self-balancing-ball-robot
