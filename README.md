@@ -6,51 +6,56 @@ This project involves a self-balancing ball robot that uses computer vision and 
 
 ---
 ##  📷 Screenshots
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/3d3e28f4-178e-4782-84ad-06a53b513eaa" width="500"/>
+<table width="100%" border="0">
+<tr>
+<td width="50%" align="center" style="padding: 15px; border: 1px solid #d1d1d1; border-radius: 12px; background-color: #fcfcfc;">
+<img src="https://github.com/user-attachments/assets/3d3e28f4-178e-4782-84ad-06a53b513eaa" width="100%" style="border-radius: 8px;"/>
 
-  <p><b>Assembled Structure </b></p>
-</div>
 
-<br>
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/5f8cd47d-5307-4310-a238-a16d70e3578a" width="500"/>
+<b>Assembled Structure</b>
+</td>
+<td width="50%" align="center" style="padding: 15px; border: 1px solid #d1d1d1; border-radius: 12px; background-color: #fcfcfc;">
+<img src="https://github.com/user-attachments/assets/5f8cd47d-5307-4310-a238-a16d70e3578a" width="100%" style="border-radius: 8px;"/>
 
-  <p><b>Servo Motor</b></p>
-</div>
 
-<br>
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/efb9a0fc-657f-4070-8e32-8ab9595899f4" width="500"/>
+<b>Servo Motor</b>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding: 15px; border: 1px solid #d1d1d1; border-radius: 12px; background-color: #fcfcfc;">
+<img src="https://github.com/user-attachments/assets/efb9a0fc-657f-4070-8e32-8ab9595899f4" width="100%" style="border-radius: 8px;"/>
 
-  <p><b>Lower Linkage</b></p>
-</div>
 
-<br>
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/f79e521c-b076-4f7d-b021-5de026214127" width="500"/>
+<b>Lower Linkage</b>
+</td>
+<td align="center" style="padding: 15px; border: 1px solid #d1d1d1; border-radius: 12px; background-color: #fcfcfc;">
+<img src="https://github.com/user-attachments/assets/f79e521c-b076-4f7d-b021-5de026214127" width="100%" style="border-radius: 8px;"/>
 
-  <p><b>Upper Linkage</b></p>
-</div>
 
-<br>
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/f0f74fc0-ce52-4602-b656-73c03971cc9c" width="500"/>
+<b>Upper Linkage</b>
+</td>
+</tr>
+<tr>
+<td align="center" style="padding: 15px; border: 1px solid #d1d1d1; border-radius: 12px; background-color: #fcfcfc;">
+<img src="https://github.com/user-attachments/assets/f0f74fc0-ce52-4602-b656-73c03971cc9c" width="100%" style="border-radius: 8px;"/>
 
-  <p><b>Camera Module</b></p>
-</div>
-<br>
-div align="center">
-  <img src="https://github.com/user-attachments/assets/b341c065-658f-4e87-9d06-eb8b12edd8f4" width="500"/>
 
-  <p><b>Camera View</b></p>
-</div>
 
-<br>
+<b>Camera Module</b>
+</td>
+<td align="center" style="padding: 15px; border: 1px solid #d1d1d1; border-radius: 12px; background-color: #fcfcfc;">
+<img src="https://github.com/user-attachments/assets/b341c065-658f-4e87-9d06-eb8b12edd8f4" width="100%" style="border-radius: 8px;"/>
+
+
+
+<b>Camera View</b>
+</td>
+</tr>
+</table>
 
 ---
 
