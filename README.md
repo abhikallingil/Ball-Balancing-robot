@@ -55,14 +55,19 @@ This project involves a self-balancing ball robot that uses computer vision and 
 <b>Camera View</b>
 </td>
 </tr>
-</table>
-<h2 align="center">🎥 Demo Video</h2>
+<tr>
+<td colspan="2" align="center" style="padding: 15px; border: 1px solid #d1d1d1; border-radius: 12px; background-color: #fcfcfc;">
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/e175ba08-1b93-4134-be8c-e4b1270dabba">
-    <img src="https://github.com/user-attachments/assets/3d3e28f4-178e-4782-84ad-06a53b513eaa" width="80%" style="border-radius: 12px;">
-  </a>
-</p>
+<a href="https://github.com/user-attachments/assets/e175ba08-1b93-4134-be8c-e4b1270dabba">
+  <img src="https://github.com/user-attachments/assets/b341c065-658f-4e87-9d06-eb8b12edd8f4" width="60%" style="border-radius: 8px;"/>
+</a>
+
+<br><br>
+<b>▶️ Demo Video</b>
+
+</td>
+</tr>
+</table>
 
 ---
 
