@@ -7,7 +7,7 @@ This project involves a self-balancing ball robot that uses computer vision and 
 ---
 ##  📷 Screenshots
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/099f989c-ea3a-458e-b146-e180f124afed" width="500"/>
+  <img src="https://github.com/user-attachments/assets/3d3e28f4-178e-4782-84ad-06a53b513eaa" width="500"/>
 
   <p><b>Assembled Structure </b></p>
 </div>
@@ -43,7 +43,14 @@ This project involves a self-balancing ball robot that uses computer vision and 
 
   <p><b>Camera Module</b></p>
 </div>
-<br><br>
+<br>
+div align="center">
+  <img src="https://github.com/user-attachments/assets/b341c065-658f-4e87-9d06-eb8b12edd8f4" width="500"/>
+
+  <p><b>Camera View</b></p>
+</div>
+
+<br>
 
 ---
 
