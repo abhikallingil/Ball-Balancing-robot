@@ -95,15 +95,15 @@ This project involves a self-balancing ball robot that uses computer vision and 
 ## 🛠️ Tech Stack
 
 - **Language:** Python  
-- **Hardware:** Raspberry Pi, Servo Motors, Camera Module  
+- **Hardware:** Raspberry Pi, Servo Motors, Camera Module, PCA9685  
 - **Libraries:**
-  - numpy  
-  - opencv-python (cv2)  
-  - picamera2  
-  - adafruit-circuitpython-servokit  
-  - math (built-in)  
-  - time (built-in)  
-  - threading (built-in)  
+  - OpenCV (cv2)
+  - NumPy
+  - adafruit-circuitpython-servokit
+  - Flask
+  - threading
+  - math
+  - time  
 
 ---
 
