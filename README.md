@@ -149,6 +149,7 @@ This project involves a self-balancing ball robot that uses computer vision and 
 
 ## ⚙️ Installation
 
+Run this in Raspberry pi
 ```bash
 git clone https://github.com/abhikallingil/Ball-Balancing-robot_PID
 cd self-balancing-ball-robot
