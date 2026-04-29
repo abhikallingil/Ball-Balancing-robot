@@ -150,7 +150,7 @@ This project involves a self-balancing ball robot that uses computer vision and 
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/self-balancing-ball-robot.git
+git clone https://github.com/abhikallingil/Ball-Balancing-robot_PID
 cd self-balancing-ball-robot
 chmod +x setup.sh
 ./setup.sh
