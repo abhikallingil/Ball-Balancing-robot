@@ -70,7 +70,7 @@ class Orient:
         self.ini_pos = [0, 0, 0.0732]
         self.pz_max = 0.0732
         self.pz_min = 0.0532
-        self.phi_max = 20
+        self.phi_max = 8.5
 
     def kinema_inv(self, n, Pz):
         L = self.L
@@ -133,7 +133,7 @@ class Orient:
         C2 = [x, y, z]
         theta_c = 90 - math.degrees(math.atan2(math.sqrt(C2[0]**2 + C2[1]**2) - L[0], C2[2]))
 
-        thetas = [theta_a, theta_b - 7, theta_c]
+        thetas = [theta_a + 20, theta_b + 20, theta_c + 20]
         return thetas
 
     def control_posture(self, pos, t):
@@ -326,15 +326,13 @@ class Camera:
 
 
 # ── Globals ────────────────────────────────────────────────────────────────────
-# TUNED: Ki drastically reduced (was 0.2909 — caused integral windup → ball drifting to edge)
-# TUNED: Kd increased (brakes fast-moving ball before it reaches boundary)
-KPID = [0.1091, 0.001, 1.50]
-k    = 1.1
-a    = 0.60   # slightly less smoothing for faster edge response (was 0.9)
+KPID = [0.17355, 0.3, 1.7349]
+k    = 1.489
+a    = 0.358
 
 # ── Boundary circle radius in pixels (tune to match your glass disc in frame) ──
-BOUNDARY_RADIUS = 140
-BOUNDARY_WARN   = 50   # px from edge at which braking kicks in (was 20 — only visual)
+BOUNDARY_RADIUS = 185
+BOUNDARY_WARN   = 20   # px from edge at which the ring turns red
 
 latest_jpeg = None
 jpeg_lock   = threading.Lock()
@@ -448,6 +446,7 @@ def main():
             display = frame.copy()
 
             # ── Boundary circle (glass platform edge) ─────────────────────────
+            # Default: cyan ring. Turns red + shows warning when ball nears edge.
             boundary_color     = (0, 200, 255)   # cyan
             boundary_thickness = 2
             near_edge          = False
@@ -527,30 +526,9 @@ def main():
             with ball_lock:
                 cx = ball_state["x"]
                 cy = ball_state["y"]
-
             if cx != -1:
                 theta, phi = pid.compute(goal, [cx, cy])
-
-                # ── Edge braking: boost tilt when ball is near boundary ───────
-                # cx, cy here are ball coords relative to center (not pixel coords)
-                dist_from_center = math.sqrt(cx**2 + cy**2)
-                brake_zone_start = BOUNDARY_RADIUS - BOUNDARY_WARN
-
-                if dist_from_center > brake_zone_start:
-                    # How deep into the warning zone (0.0 → 1.0)
-                    penetration = (dist_from_center - brake_zone_start) / BOUNDARY_WARN
-                    penetration = min(penetration, 1.0)
-
-                    # Scale tilt up to 3.5x at the very edge
-                    edge_factor = 1.0 + 2.5 * penetration
-                    phi = min(phi * edge_factor, robot.phi_max)
-
-                    # Bleed off integral windup so it doesn't fight the correction
-                    pid.integral_x *= 0.5
-                    pid.integral_y *= 0.5
-
                 robot.control_posture([theta, phi, pz_ini], 0)
-
             time.sleep(0.001)
     except KeyboardInterrupt:
         print("\n[INFO] Ctrl+C received. Shutting down...")
