@@ -124,9 +124,9 @@ This project involves a self-balancing ball robot that uses computer vision and 
 
 | Servo | Channel |
 |-------|---------|
-| Servo 1 | CH0 |
-| Servo 2 | CH1 |
-| Servo 3 | CH2 |
+| Servo 1 | CH8 |
+| Servo 2 | CH0 |
+| Servo 3 | CH3 |
 
 ---
 
