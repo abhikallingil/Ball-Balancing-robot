@@ -63,7 +63,7 @@ This project involves a self-balancing ball robot that uses computer vision and 
 </a>
 
 <br><br>
-<b>▶️ Demo Video</b>
+<b>▶️ Demo Video (Click to Play) </b>
 
 </td>
 </tr>
